@@ -35,7 +35,7 @@ namespace CsharpTutorial
 
         static void Main(string[] args)
         {
-            /*
+            
             #region Variable's
             Console.WriteLine("Hello, World!");
             Console.WriteLine("Learning C# Programming");
@@ -84,7 +84,6 @@ namespace CsharpTutorial
             p6.EgDoWhile();
             #endregion
             
-
             #region Jump Statement
             Part7_Jumping p7 =new Part7_Jumping();
             p7.EgBreak();
@@ -98,12 +97,10 @@ namespace CsharpTutorial
             p8.EgString();
             #endregion
             
-
             #region Practice Problem
             Part9_Practice p9 = new Part9_Practice();
             p9.patten();
-            #endregion
-            
+            #endregion           
 
             #region Object Oriented Programming
             //Part10_OOP p10 = new Part10_OOP();
@@ -119,7 +116,6 @@ namespace CsharpTutorial
             c.Stop();
             #endregion
             
-
             #region Encapsulation
             Part11_Encapsulation p11=new Part11_Encapsulation();
             
@@ -134,23 +130,21 @@ namespace CsharpTutorial
 
             #endregion
             
-
             #region Inheritance
 
             Part13_Inheritance.Employee employee = new Part13_Inheritance.Employee(1,"John");
             employee.DisplayEmployee();
-            Part13_Inheritance.Programmer p =new Part13_Inheritance.Programmer(2,"ikol");
-            p.DisplayEmployee();
+            Part13_Inheritance.Programmer pm =new Part13_Inheritance.Programmer(2,"ikol");
+            pm.DisplayEmployee();
             Part13_Inheritance.Manager m = new Part13_Inheritance.Manager(3, "rahul");
             m.DisplayEmployee();
-            p.GetCoffee();
+            pm.GetCoffee();
             Console.WriteLine("This is calling from child class");
             m.DisplayEmployee();
             m.GetCoffee();
             m.AssignTask();
             
             #endregion
-            
 
             #region Polymorphism
             Part14_Polymorphism part14 = new Part14_Polymorphism();
@@ -178,7 +172,6 @@ namespace CsharpTutorial
             Console.WriteLine(part15.Price);
             #endregion
             
-
             #region Static Members
             Part16_Static part16 = new Part16_Static();
             Part16_Static.Sum(10,21);
@@ -203,21 +196,19 @@ namespace CsharpTutorial
             part18_Abstract.Draw2();
             #endregion
             
-
             #region Interface
-            ICategory c= new Category();
-            Console.WriteLine("This is from Adding . "+c.Add());
-            Console.WriteLine("This from Remove. "+c.Remove());
+            ICategory cm= new Category();
+            Console.WriteLine("This is from Adding . "+cm.Add());
+            Console.WriteLine("This from Remove. "+cm.Remove());
             //c.Print();//Cannot accesiable becoz PRint method interface not created.
 
             IPriceDeails pc = new Category();
             pc.valuecheck();
             #endregion
-            
 
             #region Boxing and Unboxing
-            int a = 5;
-            object obj = a;
+            int ak = 5;
+            object obj = ak;
             Console.WriteLine(obj);
 
             int b=(int)obj;
@@ -225,7 +216,6 @@ namespace CsharpTutorial
             
             #endregion
             
-
             #region Extension Method
             //Part20_Extenstion_Method part20 = new Part20_Extenstion_Method();
             string s = "Hello";
@@ -237,7 +227,6 @@ namespace CsharpTutorial
             Console.WriteLine(Weeks.Friday);
             #endregion
             
-
             #region Array's
 
             int[] arr1 = new int[5];
@@ -265,7 +254,6 @@ namespace CsharpTutorial
 
             #endregion
             
-
             #region Collections
             Part23_Indexes part23 = new Part23_Indexes();
             part23[0] = "Apple";
@@ -276,9 +264,7 @@ namespace CsharpTutorial
                 Console.WriteLine(part23[i]);
             }
             #endregion
-            */
-
-
+            
             #region Delegates and Multicast Delegate's
             Calculator calc = new Calculator(Add);
             calc = calc+ Mul;
